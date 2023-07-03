@@ -56,6 +56,11 @@ return require('packer').startup(function(use)
 
   use "kylechui/nvim-surround"
 
+  use "windwp/nvim-ts-autotag"
+
+  use 'dhruvasagar/vim-table-mode'
+
+  use 'slim-template/vim-slim'
 
   use {
     'nvim-telescope/telescope.nvim',

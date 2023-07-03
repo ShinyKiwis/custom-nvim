@@ -1,8 +1,8 @@
 local servers = {
 	"lua_ls",
-  "solargraph"
+  "solargraph",
 	-- "cssls",
-	-- "html",
+	"html",
 	-- "tsserver",
 	-- "bashls",
 	-- "yamlls",

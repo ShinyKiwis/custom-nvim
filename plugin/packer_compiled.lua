@@ -189,15 +189,20 @@ _G.packer_plugins = {
     path = "/home/nguyen/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
-  ["nvim-treesitter-textobjects"] = {
+  ["nvim-ts-autotag"] = {
     loaded = true,
-    path = "/home/nguyen/.local/share/nvim/site/pack/packer/start/nvim-treesitter-textobjects",
-    url = "https://github.com/nvim-treesitter/nvim-treesitter-textobjects"
+    path = "/home/nguyen/.local/share/nvim/site/pack/packer/start/nvim-ts-autotag",
+    url = "https://github.com/windwp/nvim-ts-autotag"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
     path = "/home/nguyen/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/nvim-tree/nvim-web-devicons"
+  },
+  ["nvim-window.git"] = {
+    loaded = true,
+    path = "/home/nguyen/.local/share/nvim/site/pack/packer/start/nvim-window.git",
+    url = "https://gitlab.com/yorickpeterse/nvim-window"
   },
   ["packer.nvim"] = {
     loaded = true,
@@ -208,12 +213,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/nguyen/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
-  },
-  ["ruby-toolkit.nvim"] = {
-    config = { "\27LJ\2\n¼\2\0\0\5\0\n\0\0226\0\0\0009\0\1\0009\0\2\0'\2\3\0'\3\4\0'\4\5\0B\0\4\0016\0\0\0009\0\1\0009\0\2\0'\2\6\0'\3\a\0'\4\b\0B\0\4\0016\0\0\0009\0\1\0009\0\2\0'\2\3\0'\3\a\0'\4\t\0B\0\4\1K\0\1\0E<cmd>lua require('ruby-toolkit').create_function_from_text()<CR>?<cmd>lua require('ruby-toolkit').extract_to_function()<CR>\15<leader>mf\6v<<cmd>lua require('ruby-toolkit').extract_variable()<CR>\15<leader>mv\6n\bset\vkeymap\bvim\0" },
-    loaded = true,
-    path = "/home/nguyen/.local/share/nvim/site/pack/packer/start/ruby-toolkit.nvim",
-    url = "https://github.com/otavioschwanck/ruby-toolkit.nvim"
   },
   ["symbols-outline.nvim"] = {
     loaded = true,
@@ -239,14 +238,20 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/nguyen/.local/share/nvim/site/pack/packer/start/vim-illuminate",
     url = "https://github.com/RRethy/vim-illuminate"
+  },
+  ["vim-slim"] = {
+    loaded = true,
+    path = "/home/nguyen/.local/share/nvim/site/pack/packer/start/vim-slim",
+    url = "https://github.com/slim-template/vim-slim"
+  },
+  ["vim-table-mode"] = {
+    loaded = true,
+    path = "/home/nguyen/.local/share/nvim/site/pack/packer/start/vim-table-mode",
+    url = "https://github.com/dhruvasagar/vim-table-mode"
   }
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: ruby-toolkit.nvim
-time([[Config for ruby-toolkit.nvim]], true)
-try_loadstring("\27LJ\2\n¼\2\0\0\5\0\n\0\0226\0\0\0009\0\1\0009\0\2\0'\2\3\0'\3\4\0'\4\5\0B\0\4\0016\0\0\0009\0\1\0009\0\2\0'\2\6\0'\3\a\0'\4\b\0B\0\4\0016\0\0\0009\0\1\0009\0\2\0'\2\3\0'\3\a\0'\4\t\0B\0\4\1K\0\1\0E<cmd>lua require('ruby-toolkit').create_function_from_text()<CR>?<cmd>lua require('ruby-toolkit').extract_to_function()<CR>\15<leader>mf\6v<<cmd>lua require('ruby-toolkit').extract_variable()<CR>\15<leader>mv\6n\bset\vkeymap\bvim\0", "config", "ruby-toolkit.nvim")
-time([[Config for ruby-toolkit.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

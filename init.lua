@@ -1,5 +1,6 @@
 require 'plugins'
 require 'plugins/configs/autopair'
+require 'plugins/configs/autotag'
 require 'plugins/configs/bufferline'
 require 'plugins/configs/cmp'
 require 'plugins/configs/comment'
