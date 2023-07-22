@@ -37,3 +37,5 @@ vim.cmd.colorscheme "everforest"
 g.everforest_background = "hard"
 opt.background = "dark"
 
+-- Signcolumn
+vim.cmd('set signcolumn=yes')

@@ -3,7 +3,7 @@ local servers = {
   "solargraph",
 	-- "cssls",
 	"html",
-	-- "tsserver",
+	"tsserver",
 	-- "bashls",
 	-- "yamlls",
 }
