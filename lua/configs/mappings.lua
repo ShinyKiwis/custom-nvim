@@ -1,5 +1,5 @@
-local opts = { noremap=true, silent=true }
-local term_opts = { silent=true }
+local opts = { noremap = true, silent = true }
+local term_opts = { silent = true }
 
 local keymap = vim.api.nvim_set_keymap
 
@@ -10,7 +10,7 @@ keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
--- Window resize 
+-- Window resize
 vim.keymap.set("n", "=", [[<cmd>vertical resize +5<cr>]])
 vim.keymap.set("n", "-", [[<cmd>vertical resize -5<cr>]])
 vim.keymap.set("n", "+", [[<cmd>horizontal resize +2<cr>]])
@@ -26,8 +26,7 @@ keymap("x", "K", ":move '<-2<CR>gv-gv", opts)
 keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 
-
---Symbols Outline 
+--Symbols Outline
 keymap("n", "<leader>s", ":SymbolsOutline<CR>", opts)
 
 -- NvimTree
@@ -44,18 +43,18 @@ keymap("n", "<leader>.", ":ToggleTermSendCurrentLine<CR>", opts)
 keymap("n", "<leader>r", ":lua _IRB_TOGGLE()<CR>", opts)
 
 -- Trouble
-keymap("n", "<leader>q", ":TroubleToggle<CR>", opts)
+keymap("n", "<leader>q", ":TroubleToggle document_diagnostics<CR>", opts)
+keymap("n", "<leader>l", ":TroubleToggle lsp_references<CR>", opts)
 
 -- Neoformat
 keymap("n", "<leader>fm", ":Neoformat<CR>", opts)
 
--- Nvim Window 
+-- Nvim Window
 keymap("n", "<leader>w", ":lua require('nvim-window').pick()<CR>", opts)
 
 -- Telescope
-local builtin = require('telescope.builtin')
-vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
-vim.keymap.set('n', '<leader>fw', builtin.live_grep, {})
-vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
-vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
-
+local builtin = require("telescope.builtin")
+vim.keymap.set("n", "<leader>ff", builtin.find_files, {})
+vim.keymap.set("n", "<leader>fw", builtin.live_grep, {})
+vim.keymap.set("n", "<leader>fb", builtin.buffers, {})
+vim.keymap.set("n", "<leader>fh", builtin.help_tags, {})
