@@ -29,9 +29,13 @@ return require('packer').startup(function(use)
   use 'hrsh7th/cmp-vsnip'
   use 'hrsh7th/vim-vsnip'
 
-  use 'L3MON4D3/LuaSnip'
+  use {
+    "L3MON4D3/LuaSnip",
+    requires = {
+      "rafamadriz/friendly-snippets"
+    }
+  }
   use 'saadparwaiz1/cmp_luasnip'
-  use 'rafamadriz/friendly-snippets'
 
   use 'RRethy/vim-illuminate'
 
