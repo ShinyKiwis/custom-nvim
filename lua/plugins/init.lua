@@ -67,6 +67,9 @@ return require('packer').startup(function(use)
   use 'dhruvasagar/vim-table-mode'
 
   use 'slim-template/vim-slim'
+  use 'weizheheng/ror.nvim'
+  use 'rcarriga/nvim-notify'
+  use 'stevearc/dressing.nvim'
 
   use {
     'scalameta/nvim-metals',

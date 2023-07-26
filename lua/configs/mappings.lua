@@ -40,7 +40,7 @@ keymap("n", "<leader>c", ":BufferLinePick<CR>", opts)
 
 --  ToggleTerm
 keymap("n", "<leader>.", ":ToggleTermSendCurrentLine<CR>", opts)
-keymap("n", "<leader>r", ":lua _IRB_TOGGLE()<CR>", opts)
+keymap("n", "<leader>rb", ":lua _IRB_TOGGLE()<CR>", opts)
 
 -- Trouble
 keymap("n", "<leader>q", ":TroubleToggle document_diagnostics<CR>", opts)
@@ -52,6 +52,7 @@ keymap("n", "<leader>fm", ":Neoformat<CR>", opts)
 -- Nvim Window
 keymap("n", "<leader>w", ":lua require('nvim-window').pick()<CR>", opts)
 
+keymap("n", "<leader>rr", ":lua require('ror.commands').list_commands()<CR>", opts)
 -- Telescope
 local builtin = require("telescope.builtin")
 vim.keymap.set("n", "<leader>ff", builtin.find_files, {})
